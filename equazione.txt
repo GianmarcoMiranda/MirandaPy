@@ -1,0 +1,39 @@
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = int(input('inserisci il valore del modulo del termine di 2° grado: '))
+b = int(input('inserisci il valore del modulo del termine di 1° grado: '))
+c = int(input('inserisci il valore del modulo del termine noto: '))
+d= (b**2)-(4*a*c)
+if a==0:
+    print(" l'equazione non è di 2° grado ")
+
+if b==0:
+    print(" l'equazione è pura " )
+    z=(-c/a)**(1/2)
+    x1=z
+    x2=-z
+    print(x1)
+    print(x2)
+
+if c==0:
+    print(" l'equazione è spuria " )
+    x1= -b/a
+    x2= 0
+    print(x1)
+    print(x2)
+
+if a!=0 and b!=0 and c!=0:
+    if d<0:
+        print(" non ci sono soluzioni " )
+
+    if d>0:
+        print(" ci sono 2 soluzioni " )
+        x1=(-b+d**(1/2))/(2*a)
+        x2=(-b-d**(1/2))/(2*a)
+        print(x1)
+        print(x2)
+
+    if d==0:
+        print(" c'è una soluzione ")
+        x12=-b/(2*a)
+        print(x12)
