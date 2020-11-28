@@ -1,0 +1,14 @@
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = int(input('inserisci il numero di giorni in cui si intende noleggiare lo scooter: '))
+if a == 1:
+    print(" il costo è 45,00$ ")
+if a == 2:
+    print(" il costo è 80,00$ ")
+if a == 3:
+    print(" il costo è 120,00$ ")
+if a == 4:
+    print(" il costo è 160,00$ ")
+if a > 4:
+    x = int( 160 + 40 * ( a - 4 ))
+    print('il costo è', x)
